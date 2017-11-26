@@ -85,6 +85,7 @@ expression
     | Number                                   #numberExpression
     | Bool                                     #boolExpression
     | Null                                     #nullExpression
+    | functionCall                             #functionCallExpression
     | Variable index?                          #variableExpression
     | Constant index?                          #constantExpression
     | String                                   #stringExpression
