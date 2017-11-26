@@ -148,10 +148,6 @@ Assign      : '=';
 Comma       : ',';
 QMark       : '?';
 Colon       : ':';
-Tick        : '`';
-Dollar      : '$';
-DQuote      : '"';
-
 
 Bool
     : 'true'
@@ -163,11 +159,7 @@ Number
     ;
 
 String
-    : ["] (~["\r\n] | '\\\\' | '\\"')* ["]
-    ;
-
-Command
-    : [`] (~[`\r\n] | '\\\\' | '\\`')* [`]
+    : ['] (~['\r\n] | '\\\\' | '\\\'')* [']
     ;
 
 Variable

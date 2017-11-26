@@ -1,3 +1,6 @@
+## Directory-based project format:
+.idea/
+
 .gradle
 /build/
 
