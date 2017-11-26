@@ -1,5 +1,9 @@
 grammar CommandSkript;
 
+@header {
+package io.github.zerthick.commandskript;
+}
+
 script
     : block EOF
     ;
