@@ -23,12 +23,6 @@ statement
 assignment
     : Variable index? '=' expression    #variableAssignment
     | Constant '=' expression           #constantAssignment
-    | Variable index? '^=' expression   #powVarAssign
-    | Variable index? '*=' expression   #mulVarAssign
-    | Variable index? '/=' expression   #divVarAssign
-    | Variable index? '%=' expression   #modVarAssign
-    | Variable index? '+=' expression   #addVarAssign
-    | Variable index? '-=' expression   #subVarAssign
     ;
 
 functionCall
