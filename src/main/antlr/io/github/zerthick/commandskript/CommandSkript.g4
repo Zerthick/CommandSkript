@@ -23,6 +23,12 @@ statement
 assignment
     : Variable index? '=' expression    #variableAssignment
     | Constant '=' expression           #constantAssignment
+    | Variable index? '^=' expression   #powVarAssign
+    | Variable index? '*=' expression   #mulVarAssign
+    | Variable index? '/=' expression   #divVarAssign
+    | Variable index? '%=' expression   #modVarAssign
+    | Variable index? '+=' expression   #addVarAssign
+    | Variable index? '-=' expression   #subVarAssign
     ;
 
 functionCall
@@ -76,12 +82,6 @@ expression
     | expression '<' expression                #ltExpression
     | expression '==' expression               #eqExpression
     | expression '!=' expression               #notEqExpression
-    | expression '^=' expression               #powEqExpression
-    | expression '*=' expression               #mulEqExpression
-    | expression '/=' expression               #divEqExpression
-    | expression '%=' expression               #modEqExpression
-    | expression '+=' expression               #addEqExpression
-    | expression '-=' expression               #subEqExpression
     | expression '&&' expression               #andExpression
     | expression '||' expression               #orExpression
     | expression '?' expression ':' expression #ternaryExpression
