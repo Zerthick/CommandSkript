@@ -76,7 +76,6 @@ expression
     | expression '<' expression                #ltExpression
     | expression '==' expression               #eqExpression
     | expression '!=' expression               #notEqExpression
-    | expression '^=' expression               #powEqExpression
     | expression '*=' expression               #mulEqExpression
     | expression '/=' expression               #divEqExpression
     | expression '%=' expression               #modEqExpression
