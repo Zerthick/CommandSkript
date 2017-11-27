@@ -122,7 +122,6 @@ Null        : 'null';
 Or          : '||';
 And         : '&&';
 Equals      : '==';
-PowEquals   : '^=';
 NEquals     : '!=';
 GTEquals    : '>=';
 LTEquals    : '<=';
