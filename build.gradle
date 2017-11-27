@@ -18,22 +18,10 @@
  */
 
 group 'io.github.zerthick'
-version '1.0.3'
-
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "com.github.jengelman.gradle.plugins:shadow:2.0.1"
-    }
-}
+version '1.0.5'
 
 apply plugin: 'java'
 apply plugin: 'antlr'
-apply plugin: 'com.github.johnrengelman.shadow'
 
 sourceCompatibility = 1.8
 
@@ -48,8 +36,4 @@ dependencies {
 
 generateGrammarSource {
     arguments += ["-visitor"]
-}
-
-shadowJar {
-    configurations = [project.configurations.runtime]
 }
