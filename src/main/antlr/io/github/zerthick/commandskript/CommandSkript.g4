@@ -35,7 +35,7 @@ functionCall
     | Rand '(' exprList ')'         #randFunctionCall
     | Round '(' expression ')'      #roundFunctionCall
     | Floor '(' expression ')'      #floorFunctionCall
-    | Celi '(' expression ')'       #celiFunctionCall
+    | Ceil '(' expression ')'       #ceilFunctionCall
     ;
 
 ifStatement
@@ -111,7 +111,7 @@ Player      : 'player';
 Rand        : 'rand';
 Round       : 'round';
 Floor       : 'floor';
-Celi        : 'celi';
+Ceil        : 'ceil';
 Execute     : 'ex';
 ConsoleEx   : 'qx';
 If          : 'if';
