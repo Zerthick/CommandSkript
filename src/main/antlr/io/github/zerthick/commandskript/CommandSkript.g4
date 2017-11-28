@@ -91,6 +91,7 @@ expression
     | functionCall                             #functionCallExpression
     | Variable index?                          #variableExpression
     | Constant index?                          #constantExpression
+    | Special index?                           #specialExpression
     | String                                   #stringExpression
     | list index?                              #listExpression
     | '(' expression ')'                       #expressionExpression
@@ -170,6 +171,10 @@ Variable
 
 Constant
     : [A-Z][a-zA-Z_0-9]*
+    ;
+
+Special
+    : '$'[a-zA-Z_0-9]*
     ;
 
 Comment
