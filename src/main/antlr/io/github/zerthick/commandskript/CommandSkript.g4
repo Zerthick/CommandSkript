@@ -30,7 +30,12 @@ functionCall
     | Check '(' expression ')'      #checkFunctionCall
     | Size '(' expression ')'       #sizeFunctionCall
     | ConsoleEx '(' exprList ')'    #consoleExFuntionCall
-    | Execute   '(' exprList ')'    #executeFuntionCall
+    | Execute '(' exprList ')'      #executeFuntionCall
+    | Player '(' ')'                #playerFunctionCall
+    | Rand '(' exprList ')'         #randFunctionCall
+    | Round '(' expression ')'      #roundFunctionCall
+    | Floor '(' expression ')'      #floorFunctionCall
+    | Celi '(' expression ')'       #celiFunctionCall
     ;
 
 ifStatement
@@ -102,6 +107,11 @@ index
 Print       : 'print';
 Check       : 'check';
 Size        : 'size';
+Player      : 'player';
+Rand        : 'rand';
+Round       : 'round';
+Floor       : 'floor';
+Celi        : 'celi';
 Execute     : 'ex';
 ConsoleEx   : 'qx';
 If          : 'if';
