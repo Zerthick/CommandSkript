@@ -106,7 +106,7 @@ index
     ;
 
 Print       : 'print';
-Check       : 'check';
+Check       : 'perm';
 Size        : 'size';
 Player      : 'player';
 Rand        : 'rand';
@@ -174,7 +174,7 @@ Constant
     ;
 
 Special
-    : '$'[a-zA-Z_0-9]*
+    : '_'[a-zA-Z_0-9]+
     ;
 
 Comment
