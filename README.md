@@ -9,4 +9,4 @@ for a = 1 to 5 do
 end
 ```
 
-To view full documentaiton and examples of how CommandSkript works check out the [CommandSkript Wiki]()!
+To view full documentaiton and examples of how CommandSkript works check out the [CommandSkript Wiki](https://github.com/Zerthick/CommandSkript/wiki)!
